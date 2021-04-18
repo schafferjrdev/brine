@@ -46,6 +46,10 @@
   color: #bf9000;
 }
 
+.opacitor {
+  display: none;
+}
+
 @media (max-width: 769px) {
   .testimonials-background {
     background-image: none;
@@ -60,7 +64,28 @@
     .text,
     .author {
       text-align: center;
+      max-height: 80vh;
+      overflow-y: auto;
     }
+  }
+
+  .opacitor {
+    transition: all ease 0.3s;
+    display: block;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #cae0d9; /* Old browsers */
+    background: linear-gradient(0deg, #cae0d9 0%, #cae0d911 80%);
+    background: -o-linear-gradient(0deg, #cae0d9 0%, #cae0d911 80%);
+    background: -webkit-linear-gradient(0deg, #cae0d9 0%, #cae0d911 80%);
+    background: -ms-linear-gradient(0deg, #cae0d9 0%, #cae0d911 80%);
   }
 
   .BrainhubCarousel__container {

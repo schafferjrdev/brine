@@ -19,7 +19,7 @@ const Testimonials = () => {
         {
           resolve: autoplayPlugin,
           options: {
-            interval: 10000,
+            interval: 15000,
           },
         },
         {
@@ -31,21 +31,6 @@ const Testimonials = () => {
           },
         },
       ]}
-      //   breakpoints={{
-      //     760: {
-      //       plugins: [
-      //         "infinite",
-      //         "centered",
-      //         "fastSwipe",
-      //         {
-      //           resolve: autoplayPlugin,
-      //           options: {
-      //             interval: 10000,
-      //           },
-      //         },
-      //       ],
-      //     },
-      //   }}
       animationSpeed={1000}
     >
       {testimonials.map((t) => (
