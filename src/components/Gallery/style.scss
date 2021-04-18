@@ -13,8 +13,8 @@
 }
 
 .image-gallery-content.right .image-gallery-slide .image-gallery-image {
-  width: 60vw;
-  height: 60vh;
+  width: 90vw;
+  height: 90vh;
   object-fit: contain;
 }
 
@@ -34,10 +34,6 @@
     max-width: 300px;
   }
 
-  .image-gallery-thumbnails {
-    overflow-x: scroll;
-  }
-
   .image-gallery-content.fullscreen {
     height: 100vh;
     display: flex;
@@ -51,4 +47,9 @@
     height: 70px;
     object-fit: cover;
   }
+}
+
+.gallery-photo {
+  max-width: 90vw;
+  max-height: 90vh;
 }

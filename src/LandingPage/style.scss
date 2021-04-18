@@ -45,12 +45,13 @@
 .full {
   width: 100vw;
   height: 100vh;
-  padding: 2vw;
+  // padding: 2vw;
 }
 
 .part-one {
   display: grid;
   place-items: center;
+  padding: 2vw;
 }
 
 @media (max-width: 769px) {
