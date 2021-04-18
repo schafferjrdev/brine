@@ -28,11 +28,9 @@ const NamesCouple = () => {
           <div className="noivo-text">
             <span>o noivo</span>
             <div>
-              Parece uma pessoa muito sóbria, apenas os afortunados tem
-              oportunidade de conhecer seus momentos de sorriso, suas
-              preferências, seus gostos e os ainda mais afortunados podem
-              desfrutar boas horas ao seu lado. Que o fio invisível que liga
-              você a Bruna nunca se parta.
+              O sorriso mais encantador do mundo, o nosso principezinho. Sempre
+              gentil, carinhoso e grande amigo para todas as horas. Que o fio
+              invisível que liga você a Bruna nunca se parta.
             </div>
           </div>
         </div>
