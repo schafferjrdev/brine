@@ -1,0 +1,85 @@
+.names-couple {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .logo-img {
+    max-width: 50%;
+  }
+  padding: 0 150px;
+}
+
+.couple {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .couple-text-image {
+    width: 100%;
+    //
+    img {
+      max-width: 60%;
+    }
+    .bruna {
+      float: right;
+      shape-outside: url("../../images/bruna.png");
+    }
+    .bine {
+      float: left;
+      shape-outside: url("../../images/bine.png");
+    }
+    span {
+      color: var(--light-blue);
+      font-size: calc(5vw + 24px);
+      font-family: var(--primary-font);
+    }
+    div {
+      color: var(--dark-gray);
+      font-size: calc(1vw + 12px);
+      font-family: var(--primary-font);
+    }
+  }
+  .noivo-text {
+    text-align: right;
+  }
+  .noiva-text {
+    text-align: left;
+  }
+}
+
+@media (max-width: 1025px) {
+  .names-couple {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 769px) {
+  .names-couple {
+    > img {
+      display: none;
+    }
+    padding: 0;
+  }
+
+  .couple {
+    .couple-text-image {
+      padding: 0 25px;
+      img {
+        max-width: 70%;
+      }
+      .bruna {
+        float: left;
+      }
+      .bine {
+        float: right;
+      }
+    }
+    .noivo-text {
+      text-align: left;
+    }
+    .noiva-text {
+      text-align: right;
+    }
+  }
+}

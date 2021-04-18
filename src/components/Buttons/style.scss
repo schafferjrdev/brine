@@ -1,0 +1,22 @@
+.icon-button {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+
+  &:focus {
+    border-color: transparent;
+    outline: 0;
+  }
+  &:active {
+    opacity: 0.9;
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 769px) {
+  .icon-button {
+    img {
+      max-width: 10px;
+    }
+  }
+}

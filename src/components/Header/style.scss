@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .menu {
+    display: flex;
+    font-family: AntiquaLight;
+
+    width: 25vw;
+    max-width: 570px;
+    justify-content: space-between;
+    span {
+      cursor: pointer;
+      font-size: calc(0.5vw + 12px);
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  header {
+    justify-content: center;
+    img {
+      max-width: 250px;
+      width: 40vw;
+    }
+    .menu {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
+
+@font-face {
+  font-family: Antiqua;
+  src: url("../fonts/ANTQUAB.TTF");
+}
+
+@font-face {
+  font-family: AntiquaLight;
+  src: url("../fonts/BKANT.TTF");
+}
+
+:root {
+  --primary-bg: #cae0d9;
+  --off-white: #eff5ec;
+  --white: #f5f5f5;
+  --light-green: #b3d8cc;
+  --light-blue: #688a95;
+  --dark-gray: #474747;
+  --light-gray: #78807e;
+  --image-green: invert(96%) sepia(5%) saturate(1169%) hue-rotate(118deg)
+    brightness(89%) contrast(106%) opacity(0.8);
+  --image-white: invert(100%) sepia(1%) saturate(157%) hue-rotate(95deg)
+    brightness(115%) contrast(92%);
+
+  --primary-font: "Rouge Script", cursive;
+  --secondary-font: AntiquaLight;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--dark-gray);
+}
+
+.bg-green {
+  background-color: var(--primary-bg);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.full {
+  width: 100vw;
+  height: 100vh;
+  padding: 2vw;
+}
+
+.part-one {
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 769px) {
+  .full {
+    padding: 0;
+  }
+}
