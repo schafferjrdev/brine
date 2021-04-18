@@ -1,6 +1,4 @@
 import React from "react";
-import ImageGallery from "react-image-gallery";
-import { useMediaQuery } from "react-responsive";
 
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
@@ -20,13 +18,6 @@ const images = importAll(
 );
 
 const Gallery = () => {
-  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
-
-  const items = images.map((i) => ({
-    original: i.default,
-    thumbnail: i.default,
-  }));
-
   const photos = images.map((i) => ({
     src: i.default,
   }));
@@ -40,7 +31,7 @@ const Gallery = () => {
       hasMediaButton={false}
       hasIndexBoard={false}
       hasSizeButton="bottomRight"
-      objectFit="scale-down"
+      objectFit="contain"
     />
   );
 };

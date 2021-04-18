@@ -45,13 +45,22 @@
 .full {
   width: 100vw;
   height: 100vh;
-  // padding: 2vw;
+  scroll-snap-align: start;
 }
 
 .part-one {
   display: grid;
   place-items: center;
   padding: 2vw;
+}
+
+.gallery-section {
+  height: calc(100vh - 68px);
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 769px) {

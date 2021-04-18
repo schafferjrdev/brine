@@ -21,9 +21,22 @@ header {
 @media (max-width: 769px) {
   header {
     justify-content: center;
+    padding-top: 10vh;
     img {
       max-width: 250px;
       width: 40vw;
+    }
+    .menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-height: 425px) {
+  header {
+    justify-content: center;
+    img {
+      max-width: 150px;
     }
     .menu {
       display: none;

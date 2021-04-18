@@ -31,12 +31,12 @@
     }
     span {
       color: var(--light-blue);
-      font-size: calc(5vw + 24px);
+      font-size: calc(5vmin + 24px);
       font-family: var(--primary-font);
     }
     div {
       color: var(--dark-gray);
-      font-size: calc(1vw + 12px);
+      font-size: calc(1vmin + 12px);
       font-family: var(--primary-font);
     }
   }
@@ -67,6 +67,37 @@
       padding: 0 25px;
       img {
         max-width: 70%;
+      }
+      .bruna {
+        float: left;
+      }
+      .bine {
+        float: right;
+      }
+    }
+    .noivo-text {
+      text-align: left;
+    }
+    .noiva-text {
+      text-align: right;
+    }
+  }
+}
+
+@media (max-height: 425px) {
+  .names-couple {
+    justify-content: center;
+    > img {
+      display: none;
+    }
+    padding: 0;
+  }
+  .couple {
+    width: 60%;
+    .couple-text-image {
+      padding: 0 25px;
+      img {
+        max-width: 25%;
       }
       .bruna {
         float: left;
