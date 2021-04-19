@@ -19,7 +19,7 @@ const Testimonials = () => {
         {
           resolve: autoplayPlugin,
           options: {
-            interval: 15000,
+            interval: 60000,
           },
         },
         {
